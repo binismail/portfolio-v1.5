@@ -1,0 +1,230 @@
+/*primary color: #2c3e50*/
+/*Secondary color: #34495e*/
+/*Optional: #2d3436*/
+
+
+html{
+    scroll-behavior: smooth
+    
+}
+body{
+    
+    background-color: #2c3e50;
+    font-family: 'Montserrat';
+   
+}
+
+.main{
+    color: #f3f3f3;
+    position: relative;
+    color:  rgb(204, 214, 246);
+}
+
+/*Header starts here*/
+.row{
+    margin: 10px 0;
+}
+
+.header-row{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.nav-wrapper{
+    font-size: 17px;
+    margin: 20px;
+}
+
+.nav-wrapper li{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+    
+}
+
+.nav-wrapper li a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+.reduce{
+    width: 150px;
+    height: auto;
+}
+
+.special{
+    padding: 10px 50px;
+}
+
+.ico p a{
+    text-decoration: none;
+}
+/*Modified by javascript later
+header
+*/
+.toggle-container{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 35px;
+    display: none;
+    right: -50px;
+}
+
+.toggler{
+    width: 30px;
+    height: 2.5px;
+    background: rgb(204, 214, 246); 
+    border: 17px;
+}
+
+.toggler::before{
+    content: '';
+    display: table;
+    width: 35px;
+    height: inherit;
+    background: inherit;
+    border: inherit;
+    position: absolute;
+    top: -7px;
+    right: 120px;
+}
+
+.toggler::after{
+    content: '';
+    display: table;
+    width: 25px;
+    height: inherit;
+    background: inherit;
+    position: absolute;
+    bottom: -7px;
+    right: 120px;
+}
+/*Ends ..... laterbor modified*/
+
+.welcome{
+    padding: 50px;
+    
+}
+
+/*Projects*/
+
+.projects{
+/*
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    padding: 0 55px
+*/
+     padding: 60px 30px;
+}
+
+.txt-container-pro{
+    position: relative;
+    width: 100%;
+}
+
+.txt-container-pro .txt-in{
+    width: inherit;
+}
+
+.h3-txt{
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.2);
+}
+
+.par-txt{
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+}
+
+.line-through{
+    width:70%;
+    height: 1px;
+    background: #f3f3f3f3;
+    position: absolute;
+    top: 23px;
+    left: 300px;
+    
+}
+
+.card{
+    background: #2c3e50;
+    border: 2px solid;
+    margin: 80px 5px;
+    justify-content: center;
+}
+
+.btn-primary{
+    background:  #34495e;
+    border: 2px solid #f3f3f3;
+}
+
+.btn-primary:hover{
+    background: #f3f3f3;
+    color:#2c3e50;
+    outline: none;
+}
+
+.btn-primary:active{
+    background: #f3f3f3;
+    color:#2c3e50;
+    border: none;
+}
+
+.move{
+    margin-left: 150px;
+}
+
+.center-align{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*contact*/
+
+.contact{
+/*
+    position: absolute;
+    top: 2200px;
+    width: 100%;
+    padding: 0 55px
+*/
+     padding: 50px;
+}
+
+.center-align{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.para-txt p{
+    width: 500px;
+    margin: 10px auto;
+}
+
+.change-width{
+    margin: 10px 0;
+    padding: 20px 40px;
+}
+
+.align-text-center{
+    text-transform: uppercase;
+    padding: 20px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: -50px;
+    
+}
+.footer-text-container span{
+    font-weight: 600;
+}
