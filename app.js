@@ -3,25 +3,20 @@ const toogler = (tog)=>{
         let elem = document.querySelector('.nav-wrapper')
         if(elem.style.display === 'block'){
             elem.style.display = 'none';
+            document.querySelector('.changedir').style.height = '60px';
+            document.querySelector('.changedir').style.animationName = 'backward'
         }else{
             elem.style.display = 'block';
+            document.querySelector('.changedir').style.height = '200px'
+            document.querySelector('.changedir').style.animationName = 'forward'
         }
         elem.style.animationName= 'rollover';
-        let animTime = 0.2;
-        tog.style.animationName = 'change';
-        console.log(tog.children)
-        elem === 'block'? tog.style.animationDuration = animTime : tog.style.animationDuration = 0;
         
     })
 }
 
 toogler(document.querySelector('.toggler'))
 
-const checkWindowWidth  = (e)=>{
-   let browindow = window.innerWidth;
-    if(browindow <= 992){
-        
-    }
-}
-
-setInterval(checkWindowWidth(), 1000);
+document.body.addEventListener('scrollX', function(){
+    console.log('hi')
+})

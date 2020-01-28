@@ -2,6 +2,25 @@
 /*Secondary color: #34495e*/
 /*Optional: #2d3436*/
 
+@keyframes forward {
+    0%{
+        height: 60px;
+    }
+    
+    100%{
+        height: 200px;
+    }
+}
+
+@keyframes backward{
+    0%{
+        height: 200px;
+    }
+    
+    100%{
+        height: 60px;
+    }
+}
 @keyframes rollover{
     0%{
         opacity: 0;
@@ -37,19 +56,24 @@ body{
 }
 
 /*Header starts here*/
-.row{
-    margin: 10px 0;
+.changedir{
+    margin: 0px 0;
+    position: relative;
+    animation-duration: .3s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
 }
 
 .header-row{
     width: 100%;
     padding: 0 30px;
+    background:#34495e; 
 }
 
 .nav-wrapper{
     font-size: 17px;
     margin: 20px;
-    animation-duration: 1.5s;
+    animation-duration: .5s;
     animation-timing-function: ease-in;
     backface-visibility: hidden;
     
@@ -86,26 +110,28 @@ header
     height: auto;
     position: absolute;
     cursor: pointer;
-    top: 35px;
-/*    display: none;*/
-    right: -50px;
+    top:22px;
+    display: none;
+    right: -100px;
 }
 
 .toggler{
     width: 30px;
     height: 2.5px;
     background: rgb(204, 214, 246); 
-    border: 17px;
+    border-radius: 17px;
+    cursor: pointer;
     
 }
 
 .toggler::before{
     content: '';
     display: table;
-    width: 35px;
+    width: 30px;
     height: inherit;
     background: inherit;
-    border: inherit;
+    border-radius: 17px;
+    cursor: pointer;
     position: absolute;
     top: -7px;
     right: 120px;
@@ -114,12 +140,14 @@ header
 .toggler::after{
     content: '';
     display: table;
-    width: 25px;
+    width: 30px;
     height: inherit;
     background: inherit;
     position: absolute;
     bottom: -7px;
     right: 120px;
+     border-radius: 17px;
+    cursor: pointer;
 }
 /*Ends ..... laterbor modified*/
 
@@ -168,6 +196,12 @@ header
     top: 23px;
     left: 300px;
     
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -233,6 +267,7 @@ header
 .change-width{
     margin: 10px 0;
     padding: 20px 40px;
+/*    background: #34495e;*/
 }
 
 .align-text-center{
@@ -245,6 +280,7 @@ header
     justify-content: center;
     padding-top: 100px;
     margin-bottom: -50px;
+/*    background: #34495e;*/
     
 }
 .footer-text-container span{
@@ -255,11 +291,41 @@ header
     margin: 20px 0;
 }
 
-@media only screen and (max-width: 768px){
-    .main{
-        display: none;
+@media only screen and (max-width: 1200px){
+    .nav-wrapper{
+        display: block;
+    }
+    
+    .changedir{
+        height: 80px;
     }
 }
+
+@media only screen and (max-width: 992px){
+    .nav-wrapper{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: -25px;
+    }
+    
+    .header-row .col-sm-5{
+        position: absolute;
+    }
+    .nav-wrapper li{
+        display: block;
+        font-size: 14px;
+    }
+    .toggle-container{
+        display: block;
+    }
+    
+   
+    
+    
+}
+
+@media only screen and (max-width: )
 
 
 
