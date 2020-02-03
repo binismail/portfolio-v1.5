@@ -124,6 +124,13 @@ header
     
 }
 
+.anim{
+    width: 30px;
+    height: 2.5px;
+    background: rgb(204, 214, 246); 
+    border-radius: 17px;
+    cursor: pointer;
+}
 .toggler::before{
     content: '';
     display: table;
